@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Operating Systems</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <h1>Operating Systems</h1>
+  <nav aria-label="Primary">
+    <ul class="nav">
+     <li><a href="index.html" aria-current="page">Overview</a></li>
+      <li><a href="SDLC.html">SDLC Methodologies</a></li>
+      <li><a href="languages.html">Programming Languages</a></li>
+      <li><a href="os.html">Operating Systems</a></li>
+      <li><a href="virus.html">Computer Viruses</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero compact">
+    <figure class="hero-figure">
+      <img src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2NvbXB1dGVyLW9wZXJhdGluZy1zeXRlbS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH19fQ==" alt="Tux the Linux penguin logo" />
+      <figcaption>OS kernels: quiet power under your apps.</figcaption>
+    </figure>
+  </section>
+
+  <section class="grid-two">
+    <article>
+      <h2>What an OS Does</h2>
+      <ul>
+        <li><strong>Process management:</strong> schedules work and isolates programs.</li>
+        <li><strong>Memory management:</strong> virtual addresses, paging, protection.</li>
+        <li><strong>File systems:</strong> organizes data into directories and files.</li>
+        <li><strong>Device drivers & I/O:</strong> unifies access to hardware.</li>
+        <li><strong>Security:</strong> users, permissions, and sandboxing.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h2>Userland & System Calls</h2>
+      <p>
+        Applications run in user space and ask the kernel for services using system calls
+        (e.g., <code>open</code>, <code>read</code>, <code>write</code>). POSIX standardizes many of these,
+        which is why code ports across Unix-like systems fairly well.
+      </p>
+    </article>
+  </section>
+
+  <section class="sources">
+    <h4>Sources</h4>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Operating_system" target="_blank" rel="noopener">Operating system</a></li>
+      <li><a href="https://pubs.opengroup.org/onlinepubs/9699919799/" target="_blank" rel="noopener">POSIX overview</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Finish with: <a href="viruses.html">Computer Viruses</a></p>
+</footer>
+</body>
+</html>
