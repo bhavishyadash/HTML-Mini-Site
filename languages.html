@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Programming Languages</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
   <h1>Programming Languages</h1>
   <nav aria-label="Primary">
     <ul class="nav">
-     <li><a href="index.html" aria-current="page">Overview</a></li>
-      <li><a href="SDLC.html">SDLC Methodologies</a></li>
-      <li><a href="languages.html">Programming Languages</a></li>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="SDLC.html">SDLC</a></li>
+      <li><a href="languages.html" aria-current="page">Programming Languages</a></li>
       <li><a href="os.html">Operating Systems</a></li>
       <li><a href="virus.html">Computer Viruses</a></li>
     </ul>
@@ -21,50 +21,53 @@
 </header>
 
 <main>
-  <section class="hero compact">
+  <section class="hero compact" aria-labelledby="page-hero">
+    <h2 id="page-hero" class="visually-hidden">Programming Languages Overview</h2>
+
     <figure class="hero-figure">
-      <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Best-Programming-Languages-to-Start-Learning-Today.jpg" alt="Code editor with syntax highlighting" />
-      <figcaption>Different languages, same goal: express intent precisely.</figcaption>
+      <!-- Inline SVG = reliable academic-looking graphic -->
+      <svg viewBox="0 0 360 180" role="img" aria-label="Symbols representing programming: braces, lambda, and types">
+        <rect x="0" y="0" width="360" height="180" fill="#0b1220"></rect>
+        <text x="40" y="110" font-size="96" fill="#38bdf8">{ }</text>
+        <text x="150" y="110" font-size="96" fill="#94a3b8">λ</text>
+        <text x="220" y="110" font-size="72" fill="#e5e7eb">int→T</text>
+      </svg>
+      <figcaption>Paradigms and types shape how we express programs.</figcaption>
     </figure>
   </section>
 
-  <section class="grid-two">
+  <section class="grid-two" aria-labelledby="paradigms-heading">
+    <h2 id="paradigms-heading" class="visually-hidden">Paradigms and Models</h2>
     <article>
-      <h2>Paradigms</h2>
+      <h3>Paradigms</h3>
       <p>
-        Languages encourage ways of thinking. <strong>Procedural</strong> (C)
-        favors step-by-step routines. <strong>Object-oriented</strong> (Java, C#)
-        organizes data and behavior together. <strong>Functional</strong> (Haskell,
-        Elixir) leans on pure functions and immutability. Many modern languages are
-        multi-paradigm (Python, JavaScript).
-      </p>
-      <p id="sdlc-note">
-        In a real SDLC, teams pick languages that fit constraints—runtime, libraries,
-        performance, hiring, and maintenance. Tools shape process and vice versa.
+        <strong>Procedural</strong> (C) focuses on step-by-step routines.
+        <strong>Object-oriented</strong> (Java, C#) organizes data and behavior together.
+        <strong>Functional</strong> (Haskell, Elixir) emphasizes pure functions and immutability.
+        Many modern languages are multi-paradigm (Python, JavaScript).
       </p>
     </article>
 
     <aside>
       <h3>Compiled vs. Interpreted</h3>
       <ul>
-        <li><em>Compiled:</em> Translate to machine code ahead of time (C, Rust).</li>
-        <li><em>Interpreted:</em> Run via a VM/engine at runtime (Python, JS).</li>
-        <li><em>Hybrid/JIT:</em> Mix approaches for speed and portability (Java, .NET).</li>
+        <li><em>Compiled:</em> translated to machine code ahead of time (C, Rust).</li>
+        <li><em>Interpreted:</em> executed by a VM/engine at runtime (Python, JS).</li>
+        <li><em>Hybrid/JIT:</em> mixes both for portability and speed (Java, .NET).</li>
       </ul>
     </aside>
   </section>
 
-  <section>
-    <h2>Type Systems</h2>
+  <section aria-labelledby="types-heading">
+    <h2 id="types-heading" class="section-title">Type Systems</h2>
     <p>
       Static types catch shape errors early; dynamic types trade some safety for speed of iteration.
-      Modern compilers add type inference to reduce boilerplate (e.g., <code>auto</code> in C++,
-      <code>var</code> in C#, and TypeScript atop JS).
+      Type inference (e.g., <code>auto</code> in C++, TypeScript for JS) reduces boilerplate.
     </p>
   </section>
 
-  <section class="sources">
-    <h4>Sources</h4>
+  <section class="sources" aria-labelledby="lang-sources">
+    <h2 id="lang-sources" class="section-title">Sources</h2>
     <ul>
       <li><a href="https://en.wikipedia.org/wiki/Programming_paradigm" target="_blank" rel="noopener">Programming paradigms</a></li>
       <li><a href="https://en.wikipedia.org/wiki/Type_system" target="_blank" rel="noopener">Type systems</a></li>
@@ -73,7 +76,7 @@
 </main>
 
 <footer class="site-footer">
-  <p>Next up: <a href="operating-systems.html">Operating Systems</a></p>
+  <p>Next: <a href="operating-systems.html">Operating Systems</a></p>
 </footer>
 </body>
 </html>

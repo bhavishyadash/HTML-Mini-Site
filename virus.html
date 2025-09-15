@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Computer Viruses</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
   <h1>Computer Viruses</h1>
   <nav aria-label="Primary">
     <ul class="nav">
-      <li><a href="index.html" aria-current="page">Overview</a></li>
-      <li><a href="SDLC.html">SDLC Methodologies</a></li>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="SDLC.html">SDLC</a></li>
       <li><a href="languages.html">Programming Languages</a></li>
       <li><a href="os.html">Operating Systems</a></li>
-      <li><a href="virus.html">Computer Viruses</a></li>
+      <li><a href="virus.html" aria-current="page">Computer Viruses</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
-  <section class="hero compact">
+  <section class="hero compact" aria-labelledby="page-hero">
+    <h2 id="page-hero" class="visually-hidden">Viruses Overview</h2>
+
     <figure class="hero-figure">
-      <img src="https://imageio.forbes.com/specials-images/imageserve/684b375f226a9cab9ba339a5/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds" alt="Stylized warning symbol on a digital background" />
-      <figcaption>Malware evolves; so must our defenses.</figcaption>
+      <!-- Inline SVG warning/scan icon -->
+      <svg viewBox="0 0 360 180" role="img" aria-label="Warning symbol and magnifier representing malware analysis">
+        <rect x="0" y="0" width="360" height="180" fill="#0b1220"></rect>
+        <circle cx="90" cy="90" r="60" fill="none" stroke="#f59e0b" stroke-width="8"></circle>
+        <polygon points="90,35 120,115 60,115" fill="#f59e0b"></polygon>
+        <rect x="210" y="55" width="90" height="60" rx="6" ry="6" fill="none" stroke="#38bdf8" stroke-width="6"></rect>
+        <circle cx="280" cy="120" r="20" fill="none" stroke="#38bdf8" stroke-width="6"></circle>
+        <line x1="295" y1="135" x2="315" y2="155" stroke="#38bdf8" stroke-width="6"></line>
+      </svg>
+      <figcaption>Warnings and scanning: two pillars of practical defense.</figcaption>
     </figure>
   </section>
 
-  <section class="grid-two">
+  <section class="grid-two" aria-labelledby="virus-what-heading">
+    <h2 id="virus-what-heading" class="visually-hidden">What is a Virus</h2>
     <article>
-      <h2>What is a Virus?</h2>
+      <h3>What is a Virus?</h3>
       <p>
         A computer virus is malicious code that attaches to a host program or file
-        and replicates when that host is executed. Variants include file infectors,
+        and replicates when the host executes. Variants include file infectors,
         macro viruses, and boot sector attacks.
       </p>
     </article>
 
     <article>
-      <h2>Propagation & Payloads</h2>
+      <h3>Propagation & Payloads</h3>
       <p>
-        Spread often relies on user action (opening attachments, running cracked software),
-        removable media, or exploits. Payloads range from nuisance messages to data theft
-        and ransomware. Defense layers include least privilege, updates, backups, and
-        behavior-based detection.
+        Spread often relies on user action (attachments, cracked software), removable media,
+        or exploits. Payloads range from nuisance messages to data theft and ransomware.
+        Defense layers include least privilege, patching, backups, and behavior-based detection.
       </p>
     </article>
   </section>
 
-  <section class="sources">
-    <h4>Sources</h4>
+  <section class="sources" aria-labelledby="virus-sources">
+    <h2 id="virus-sources" class="section-title">Sources</h2>
     <ul>
       <li><a href="https://en.wikipedia.org/wiki/Computer_virus" target="_blank" rel="noopener">Computer virus</a></li>
-      <li><a href="https://www.us-cert.gov/" target="_blank" rel="noopener">CISA/US-CERT advisories</a></li>
+      <li><a href="https://www.cisa.gov/news-events/alerts" target="_blank" rel="noopener">CISA Advisories</a></li>
     </ul>
   </section>
 </main>

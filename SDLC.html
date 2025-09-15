@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Software Development Life Cycle (SDLC)</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
   <h1>Software Development Life Cycle (SDLC)</h1>
   <nav aria-label="Primary">
     <ul class="nav">
-     <li><a href="index.html" aria-current="page">Overview</a></li>
-      <li><a href="SDLC.html">SDLC Methodologies</a></li>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="SDLC.html" aria-current="page">SDLC</a></li>
       <li><a href="languages.html">Programming Languages</a></li>
       <li><a href="os.html">Operating Systems</a></li>
       <li><a href="virus.html">Computer Viruses</a></li>
@@ -21,72 +21,69 @@
 </header>
 
 <main>
-  <section class="hero compact">
+  <section class="hero compact" aria-labelledby="page-hero">
+    <h2 id="page-hero" class="visually-hidden">SDLC Overview</h2>
     <figure class="hero-figure">
-      <img
-        src="https://datarob.com/content/images/2019/08/SDLC-stages.png"
-        alt="Diagram with SDLC stages such as planning, analysis, design, implementation, testing, deployment, and maintenance" />
+      <img src="https://import.pvs-studio.com/docx/terminology/SDLC_TERM/image1.png?ver=06-04-2025-11-22-04"
+           alt="Typical SDLC stages: requirements, design, implementation, testing, deployment, maintenance">
       <figcaption>Typical SDLC stages from concept to maintenance.</figcaption>
     </figure>
   </section>
 
-  <section class="grid-two">
+  <section class="grid-two" aria-labelledby="purpose-heading">
+    <h2 id="purpose-heading" class="visually-hidden">Purpose</h2>
     <article>
-      <h2>Purpose</h2>
+      <h3>Purpose</h3>
       <p>
-        SDLC is a structured approach for building and maintaining software.
-        It reduces risk by defining stages (requirements, design, implementation,
-        testing, deployment, and maintenance) and setting checkpoints for quality,
-        budget, and schedule.
+        SDLC is a structured approach for building and maintaining software. It reduces risk
+        by defining stages and checkpoints for quality, budget, and schedule.
       </p>
     </article>
-
     <article>
-      <h2>Key Outcomes by Stage</h2>
+      <h3>Key Outcomes by Stage</h3>
       <ul>
-        <li><strong>Requirements:</strong> problem statement, scope, acceptance criteria.</li>
-        <li><strong>Design:</strong> architecture, data models, interface contracts.</li>
-        <li><strong>Implementation:</strong> source code, code reviews, CI builds.</li>
-        <li><strong>Testing:</strong> unit/integration tests, defect tracking.</li>
-        <li><strong>Deployment:</strong> release plan, rollout/rollback strategy.</li>
-        <li><strong>Maintenance:</strong> monitoring, patches, iterative improvements.</li>
+        <li><strong>Requirements:</strong> scope, acceptance criteria.</li>
+        <li><strong>Design:</strong> architecture, data models, interfaces.</li>
+        <li><strong>Implementation:</strong> code, reviews, CI builds.</li>
+        <li><strong>Testing:</strong> unit/integration tests, bug tracking.</li>
+        <li><strong>Deployment:</strong> release plan, rollout/rollback.</li>
+        <li><strong>Maintenance:</strong> monitoring, patches, improvements.</li>
       </ul>
     </article>
   </section>
 
-  <section class="grid-two">
+  <section class="grid-two" aria-labelledby="methods-heading">
+    <h2 id="methods-heading" class="visually-hidden">Common Methodologies</h2>
     <article>
-      <h2>Common Methodologies</h2>
+      <h3>Common Methodologies</h3>
       <ul>
-        <li><strong>Waterfall:</strong> linear phases; simple governance; weak at handling late changes.</li>
-        <li><strong>Agile (Scrum/Kanban):</strong> iterative delivery, frequent feedback, evolving backlog.</li>
-        <li><strong>Spiral:</strong> risk-driven iterations; suited to high-uncertainty projects.</li>
-        <li><strong>V-Model:</strong> testing mapped to each development phase; strong verification focus.</li>
+        <li><strong>Waterfall:</strong> linear phases; predictable, weak on late changes.</li>
+        <li><strong>Agile (Scrum/Kanban):</strong> iterative delivery and feedback.</li>
+        <li><strong>Spiral:</strong> risk-driven iterations for high uncertainty.</li>
+        <li><strong>V-Model:</strong> verification/validation mapped to each phase.</li>
       </ul>
     </article>
-
     <aside>
       <h3>Choosing a Method</h3>
       <ul>
-        <li>Stable requirements & heavy compliance → Waterfall / V-Model.</li>
-        <li>Changing requirements & user feedback needed → Agile.</li>
+        <li>Stable requirements & compliance → Waterfall / V-Model.</li>
+        <li>Changing requirements & user feedback → Agile.</li>
         <li>High technical risk or novel R&amp;D → Spiral.</li>
       </ul>
     </aside>
   </section>
 
-  <section>
-    <h2>Process + Practice</h2>
+  <section aria-labelledby="practice-heading">
+    <h2 id="practice-heading" class="section-title">Process + Practice</h2>
     <p>
-      SDLC isn’t just meetings. Healthy teams pair process with practices like
-      version control, CI/CD, automated testing, code review, and monitoring.
-      The methodology frames <em>when</em> you do work; these practices raise
-      the bar on <em>how well</em> you do it.
+      Methodology frames <em>when</em> you do work; engineering practices raise
+      <em>how well</em> you do it: version control, CI/CD, automated testing,
+      code review, observability, and incident response.
     </p>
   </section>
 
-  <section class="sources">
-    <h4>Sources</h4>
+  <section class="sources" aria-labelledby="sdlc-sources">
+    <h2 id="sdlc-sources" class="section-title">Sources</h2>
     <ul>
       <li><a href="https://en.wikipedia.org/wiki/Software_development_process" target="_blank" rel="noopener">Software development process</a></li>
       <li><a href="https://en.wikipedia.org/wiki/Agile_software_development" target="_blank" rel="noopener">Agile software development</a></li>
